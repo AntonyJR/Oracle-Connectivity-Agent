@@ -1,0 +1,19 @@
+# Build Files
+agent_env.sh
+build.sh
+
+# Run Files
+agent.env
+run.sh
+
+# Documentation
+README.md
+
+# Project Files
+.DS_Store
+.idea
+.git
+.gitignore
+
+# Personal Files
+antony.env
