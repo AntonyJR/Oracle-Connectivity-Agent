@@ -10,7 +10,8 @@
 
 # Create Docker Image
 # Build Args: version, agent_zip, run_command
-DOCKER_BUILD="docker build --squash --force-rm=true --no-cache=true \
+# DOCKER_BUILD="docker build --squash --force-rm=true --no-cache=true \
+DOCKER_BUILD="docker build --squash \
                            --build-arg version=${IMAGE_TAG} \
                            -t ${IMAGE_NAME}:${IMAGE_TAG} ."
 echo ${DOCKER_BUILD}
