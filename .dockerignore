@@ -17,3 +17,6 @@ README.md
 
 # Personal Files
 antony.env
+docker_external.env
+docker_internal.env
+local
