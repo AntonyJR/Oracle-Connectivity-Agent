@@ -25,7 +25,8 @@ LABEL version=$version
 WORKDIR $work_dir
 
 # Include agent zip and scripts
-COPY --from=BUILD $work_dir/agenthome $work_dir/InstallerProfile.cfg ./
+COPY --from=BUILD $work_dir/InstallerProfile.cfg $work_dir/connectivityagent.jar ./
+COPY --from=BUILD $work_dir/agenthome ./agenthome/
 COPY ContainerScripts/$run_command .
 
 # Command to run agent
