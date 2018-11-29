@@ -5,7 +5,7 @@
 
 # Image Properties
 IMAGE_NAME=${IMAGE_NAME:-oracle/connectivityagent}
-IMAGE_TAG=${IMAGE_TAG:-18.2.3}
+IMAGE_TAG=${IMAGE_TAG:-18.3.3}
 
 # Container Properties
 CONTAINER_NAME=${CONTAINER_NAME:-Agent}
