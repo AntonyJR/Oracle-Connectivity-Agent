@@ -1,7 +1,8 @@
 #!/bin/bash
 # Build a Docker image to run the Oracle Integration Cloud Connectivity Agent
 # Requirements:
-#   Obtain 18.2.3.18_3_1.oic_connectivity_agent.zip and place in same directory as dockerfile
+#   Obtain $IMAGE_TAG oic_connectivity_agent.zip and place in Agent directory under dockerfile
+#   Rename the image $IMAGE_TAG.oic_connectivity_agent.zip so you can build multiple versions
 # Created by :
 #   Antony.Reynolds@oracle.com
 

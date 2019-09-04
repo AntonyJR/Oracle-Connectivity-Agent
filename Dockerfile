@@ -14,7 +14,7 @@ RUN jar -xf $agent_zip
 
 FROM store/oracle/serverjre:8
 
-ARG version=18.2.3
+ARG version=19.3.2
 
 ENV run_command=run_agent.sh
 ENV work_dir=/u01/agent
