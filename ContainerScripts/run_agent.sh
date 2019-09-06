@@ -26,5 +26,9 @@ then
             s~\(oic_PASSWORD=\).*$~\1${oic_PASSWORD}~" InstallerProfile.cfg
 fi
 
+# Remove username and password environemnt variables
+export oic_PASSWORD=
+export oic_USER=
+
 # Run connectivity agent
 $JAVA_HOME/bin/java ${java_FLAGS} -jar connectivityagent.jar ${agent_FLAGS}
