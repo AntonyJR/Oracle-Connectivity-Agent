@@ -4,10 +4,10 @@
 #   Antony.Reynolds@oracle.com
 
 # Set Environment
-. agent_env.sh
+. `dirname "$0"`/agent_env.sh
 
 # Start Docker Container
-DOCKER_RUN="docker run ${HEADLESS_FLAG} --name ${CONTAINER_NAME} --env-file ${AGENT_PROFILE} ${IMAGE_NAME}:${IMAGE_TAG} $*"
+DOCKER_RUN="docker run ${HEADLESS_FLAG} --name ${CONTAINER_NAME} --env-file ${AGENT_PROFILE} --rm --mount source=${CONTAINER_NAME},target=/u01/agent/install ${IMAGE_NAME}:${IMAGE_TAG} $*"
 echo ${DOCKER_RUN}
 ${DOCKER_RUN}
 docker logs -f ${CONTAINER_NAME}
