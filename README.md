@@ -52,7 +52,7 @@ The script uses the following environments variables that are defaulted if not s
 |Variable|Use|Default|
 |--------|---|-------|
 |IMAGE_NAME|Name of the image to be built|oracle/connectivityagent|
-|IMAGE_TAG|Tag of the image to be build|19.3.2|
+|IMAGE_TAG|Tag of the image to be build|1.0|
 |CONTAINER_NAME|Name of container to be created|Agent|
 |AGENT_PROFILE|Name of profile properties file|agent.env|
 
@@ -71,6 +71,7 @@ Because the agent binaries and configuration are stored in a volume it is possib
 
 # TO DO
 Use password store to hold credentials
+Create yaml to deploy on K8s
 
 [Manage the Agent Group and the On-Premises Connectivity Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/managing-agent-groups-and-connectivity-agent.html
 [Download and Install the Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/agent-download-and-installation.html#GUID-932D53E0-69F1-42E2-8F9C-B2CB3B69A5B4
