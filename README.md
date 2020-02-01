@@ -17,7 +17,7 @@ The script uses the following environments variables that are defaulted if not s
 |Variable|Use|Default|
 |--------|---|-------|
 |IMAGE_NAME|Name of the image to be built|oracle/connectivityagent|
-|IMAGE_TAG|Tag of the image to be build|1.0|
+|IMAGE_TAG|Tag of the image to be build|latest|
 
 ## Profile Properties File [agent.env][]
 The [agent.env][] is used to pass the agent its configuration data.
@@ -52,7 +52,7 @@ The script uses the following environments variables that are defaulted if not s
 |Variable|Use|Default|
 |--------|---|-------|
 |IMAGE_NAME|Name of the image to be built|oracle/connectivityagent|
-|IMAGE_TAG|Tag of the image to be build|1.0|
+|IMAGE_TAG|Tag of the image to be build|latest|
 |CONTAINER_NAME|Name of container to be created|Agent|
 |AGENT_PROFILE|Name of profile properties file|agent.env|
 
