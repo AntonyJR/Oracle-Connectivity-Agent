@@ -70,7 +70,7 @@ If using [run.sh][] then each container will be associated with a volume of the 
 Because the agent binaries and configuration are stored in a volume it is possible to restart the agent by issuing the same run command.  The run script checks to see if the agent binaries are already present before attempting to download them.
 
 # TO DO
-Use password store to hold credentials
+Use password store to hold credentials  
 Create yaml to deploy on K8s
 
 [Manage the Agent Group and the On-Premises Connectivity Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/managing-agent-groups-and-connectivity-agent.html
