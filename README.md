@@ -1,8 +1,9 @@
 # Docker Image for Oracle integration (OIC) Connectivity Agent
 [This image][DockerHub] retrieves the Oracle Connectivity Agent from an OIC instance and runs it in a docker container.
 For more information about the Oracle Integration Connectivity Agent please see [Manage the Agent Group and the On-Premises Connectivity Agent][] in the Oracle Integration documentation.
-The container automatically connects to your OIC instance and downloads the agent zip file..
-This image is built on top of the [Oracle Java 8 SE (Server JRE)] container. 
+The container automatically connects to your OIC instance and downloads the agent zip file.
+This image is built on top of the [Oracle Java 8 SE (Server JRE)] container.
+A [github project][GitHub] contains the build instructions if a customized image is required.
 
 ## Running the Image
 The script [run.sh][] can be used to run the image.
@@ -48,7 +49,7 @@ If the password is left blank then the user will be prompted to enter the passwo
 There are no defaults for these values.
 
 |Variable|Use|
-|--------|---|-------|
+|--------|---|
 |oic_USER|Username for authentication to OIC instance.|
 |oic_PASSWORD|Password for authentication to OIC instance.|
 
@@ -87,7 +88,8 @@ The name of the command to execute can be overridden by passing it as a command 
 [Download and Install the Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/agent-download-and-installation.html#GUID-932D53E0-69F1-42E2-8F9C-B2CB3B69A5B4
 [Oracle Java 8 SE (Server JRE)]: https://store.docker.com/images/oracle-serverjre-8
 [JDK Container Setup Instructions]: https://store.docker.com/images/oracle-serverjre-8/plans/ba2a7fa2-3b4e-4ba3-871c-f5ffe925a0e7?tab=instructions
-[build.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/build.sh
-[run.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/run.sh
-[agent.env]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/agent.env
+[build.sh]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/build.sh
+[run.sh]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/run.sh
+[agent.env]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/agent.env
 [DockerHub]: https://hub.docker.com/r/antonyjreynolds/connectivityagent
+[GitHub]: https://github.com/AntonyJR/Oracle-Connectivity-Agent
