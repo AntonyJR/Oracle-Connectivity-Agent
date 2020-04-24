@@ -87,7 +87,7 @@ The name of the command to execute can be overridden by passing it as a command 
 [Download and Install the Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/agent-download-and-installation.html#GUID-932D53E0-69F1-42E2-8F9C-B2CB3B69A5B4
 [Oracle Java 8 SE (Server JRE)]: https://store.docker.com/images/oracle-serverjre-8
 [JDK Container Setup Instructions]: https://store.docker.com/images/oracle-serverjre-8/plans/ba2a7fa2-3b4e-4ba3-871c-f5ffe925a0e7?tab=instructions
-[build.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/build.sh
-[run.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/run.sh
-[agent.env]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/agent.env
+[build.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/build.sh
+[run.sh]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/run.sh
+[agent.env]: https://github.com/AntonyJR/Oracle-Connectivity-Agent/blob/master/agent.env
 [DockerHub]: https://hub.docker.com/r/antonyjreynolds/connectivityagent
