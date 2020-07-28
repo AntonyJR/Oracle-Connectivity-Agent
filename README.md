@@ -6,7 +6,7 @@ This image is built on top of the [Oracle Java 8 SE (Server JRE)] container.
 A [github project][GitHub] contains the build instructions if a customized image is required.
 
 ## Running the Image
-The script [run.sh][] can be used to run the image.
+The script [run.sh][] can be used to run the image. I makes use of the script [agent_env.sh][]
 If the profile properties file (default [agent.env][]) has no entry for the oic_PASSWORD then the container will be started in the foreground to allow entry of the username/password.
 If the container is started in the foreground after entering the username/password it is recommended to detach from the container (default keystroke is ^P^Q). 
 The [run.sh][] uses a volume to store the agent binaries and configuration.
@@ -75,7 +75,7 @@ The script uses the following environments variables that are defaulted if not s
 You need to register for the image at [Oracle Java 8 SE (Server JRE)] and proceed to Checkout.
 This requires you to have a docker account.
 After agreeing to the terms and conditions then you will be granted access to the image.
-Once registered follow the [setup instructions][JDK Container Setup Instructions] to pull the image.
+Once registered follow the setup instructions to pull the image.
 
 ### Customizing the Image
 The name of the command to execute can be overridden by passing it as a command line parameter but obviously you need to create an image with the new run command.
@@ -87,9 +87,9 @@ The name of the command to execute can be overridden by passing it as a command 
 [Manage the Agent Group and the On-Premises Connectivity Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/managing-agent-groups-and-connectivity-agent.html
 [Download and Install the Agent]: https://docs.oracle.com/en/cloud/paas/integration-cloud/integrations-user/agent-download-and-installation.html#GUID-932D53E0-69F1-42E2-8F9C-B2CB3B69A5B4
 [Oracle Java 8 SE (Server JRE)]: https://store.docker.com/images/oracle-serverjre-8
-[JDK Container Setup Instructions]: https://store.docker.com/images/oracle-serverjre-8/plans/ba2a7fa2-3b4e-4ba3-871c-f5ffe925a0e7?tab=instructions
 [build.sh]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/build.sh
 [run.sh]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/run.sh
+[agent_env.sh]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/agent_env.sh
 [agent.env]: https://raw.githubusercontent.com/AntonyJR/Oracle-Connectivity-Agent/master/agent.env
 [DockerHub]: https://hub.docker.com/r/antonyjreynolds/connectivityagent
 [GitHub]: https://github.com/AntonyJR/Oracle-Connectivity-Agent
