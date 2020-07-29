@@ -10,6 +10,7 @@ AGENT_DOWNLOAD=/ic/api/integration/v1/agents/binaries/connectivity
 
 # Check if already initialized
 if [ ! -d agenthome ] ; then
+    echo "New agent installation"
     # Validate URL & Group set
     if [ -z "${oic_URL}" -o -z "${agent_GROUP_IDENTIFIER}" ] ; then
         echo Must specify oic_URL and agent_GROUP_IDENTIFIER
@@ -21,8 +22,7 @@ if [ ! -d agenthome ] ; then
     # Get download credentials
     UN=${oic_USER}
     if [ -z "${UN}" ] ; then
-        echo Enter Username
-        read UN
+        read -p "Enter Username" UN
     fi
     if [ -z "${oic_PASSWORD}" ] ; then
         USERPW=${UN}
@@ -72,6 +72,8 @@ if [ ! -d agenthome ] ; then
     # Remove username and password environment variables
     export oic_PASSWORD=
     export oic_USER=
+else
+    echo "Found existing agent installation"
 fi
 
 # Run connectivity agent
