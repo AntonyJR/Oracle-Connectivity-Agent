@@ -4,7 +4,7 @@
 #   Antony.Reynolds@oracle.com
 
 # Image Properties
-IMAGE_NAME=${IMAGE_NAME:-oracle/connectivityagent}
+IMAGE_NAME=${IMAGE_NAME:-antonyjreynolds/connectivityagent}
 IMAGE_TAG=${IMAGE_TAG:-latest}
 
 # Container Properties

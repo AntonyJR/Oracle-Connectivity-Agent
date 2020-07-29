@@ -19,7 +19,7 @@ if [ ! -d agenthome ] ; then
     fi
 
     # Get download credentials
-    UN=${oic_USERNAME}
+    UN=${oic_USER}
     if [ -z "${UN}" ] ; then
         echo Enter Username
         read UN

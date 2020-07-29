@@ -14,6 +14,5 @@
 # DOCKER_BUILD="docker build --squash --force-rm=true --no-cache=true \
 DOCKER_BUILD="docker build --build-arg version=${IMAGE_TAG} \
                            -t ${IMAGE_NAME}:${IMAGE_TAG} ."
-cp Agent/${IMAGE_TAG}.oic_connectivity_agent.zip Agent/oic_connectivity_agent.zip
 echo ${DOCKER_BUILD}
 ${DOCKER_BUILD}

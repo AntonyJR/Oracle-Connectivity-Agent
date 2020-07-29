@@ -68,8 +68,8 @@ The script uses the following environments variables that are defaulted if not s
 
 |Variable|Use|Default|
 |--------|---|-------|
-|IMAGE_NAME|Name of the image to be built|oracle/connectivityagent|
-|IMAGE_TAG|Tag of the image to be build|latest|
+|IMAGE_NAME|Name of the image to be built|antonyjreynolds/connectivityagent|
+|IMAGE_TAG|Tag of the image to be built|latest|
 
 ### Instructions for Getting Oracle Java 8 Image
 You need to register for the image at [Oracle Java 8 SE (Server JRE)] and proceed to Checkout.
@@ -81,6 +81,7 @@ Once registered follow the setup instructions to pull the image.
 The name of the command to execute can be overridden by passing it as a command line parameter but obviously you need to create an image with the new run command.
 
 ## TO DO
+* Capture password via command line if not provided to avoid asking for it twice.
 * Use password store to hold credentials
 * Create yaml to deploy on K8s
 
